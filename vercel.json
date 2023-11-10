@@ -7,7 +7,7 @@
     ],
     "routes": [
         {
-            "src": "/predict",
+            "src": "/(.*)",
             "dest": "ML model/app.py"
         }
     ]
