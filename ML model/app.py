@@ -4,6 +4,10 @@ import base64
 
 app = Flask(__name__)
 
+@app.route('/')
+def home():
+    return 'Home Page Route'
+
 @app.route('/predict', methods=['POST'])
 def predict():
     try:
